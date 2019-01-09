@@ -10,14 +10,14 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   RUN this program.  Then answer the following,
 #     GETTING HELP AS NEED! (Ask questions!!!)
 #
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              center
+#              upper left hand corner
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -25,27 +25,27 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              forword up
+#              down
 #
 #     b. Write a line of code that constructs a RoseWindow object:
-#              window=rg.TurtleWindow()
+#               rg.RoseWindow()
 #
 #     c. What is the default height of a RoseWindow?
 #        (Use the HOVER trick to determine the answer to this question.)
-#               300
+#              300
 #
 #     d. Write a line of code that construct a RoseWindow object
 #        whose height is 100:  (Use the HOVER trick to figure it out)
-#               window=
+#              rg.RoseWindow(height=100)
 #
 #     e. Use the DOT trick to answer the following:
 #
 #          -- Write the names of two types of graphics objects that
 #             you can construct OTHER than Circle and Point:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#             rg.Square
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
@@ -85,6 +85,7 @@ def main():
 def example1():
     """ Displays an empty window. """
     window = rg.RoseWindow(500, 300, 'Example 1: An empty window')
+    rg.Circle()
     window.close_on_mouse_click()
 
 
